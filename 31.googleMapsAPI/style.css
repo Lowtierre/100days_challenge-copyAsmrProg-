@@ -1,0 +1,19 @@
+body {
+    background-color: #ccc;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#map {
+    height: 90%;
+    width: 90%;
+    border-radius: 15px;
+    margin: 0 auto;
+}

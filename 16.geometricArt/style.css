@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #35a0a8;
+}
+
+.wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.container {
+    position: relative;
+    background-color: #000;
+    width: calc(15vmin * 4);
+    height: calc(15vmin * 5);
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(90, 90, 100, .4);
+}
+
+.container div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#random-btn {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 30px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-family: Poppins, sans-serif;
+    font-size: 3.5vmin;
+    cursor: pointer;
+}
+
+.square-circle-1 {
+    clip-path: circle(100% at 0 0)
+}
+
+.square-circle-2 {
+    clip-path: circle(100% at 0 100%)
+}
+
+.square-circle-3 {
+    clip-path: circle(100% at 100% 0)
+}
+
+.square-circle-4 {
+    clip-path: circle(100% at 100% 100%)
+}
+
+.triangle-1 {
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+}
+
+.triangle-2 {
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.triangle-3 {
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}
+
+.triangle-4 {
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+
+.circle {
+    clip-path: circle(50%);
+}
